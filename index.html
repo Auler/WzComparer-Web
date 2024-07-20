@@ -1,0 +1,29 @@
+<html>
+<head>
+<link rel="stylesheet" href="index.css"/>
+</head>
+<body>
+	<div class="container">
+		<h1>WzComparer Web</h1>
+		<h3>选择包含wz文件的文件夹（079版本，其他版本自行修改代码）</h3>
+		<div class="header">
+			<button>选择文件夹</button>
+			<audio id="audioPlayer" controls></audio>
+			<canvas id="myCanvas" class="wz-png"></canvas>
+		</div>
+		<div class="content">
+			<div id="directoryContents" class="wz-nav"></div>
+			<div id="wzImgs" class="wz-img"></div>
+			<div id="wzImgProps" class="wz-img-prop"></div>
+		</div>
+		<div class="tip">
+			<div class="bg"></div>
+			<div class="text">加载wz文件中...</div>
+		</div>
+	</div>
+</body>
+<script src="crypto.min.js?v=4.1.1"></script>
+<script src="pako.js?v=2.1.0"></script>
+<script src="wz_lib.js"></script>
+<script src="index.js"></script>
+</html>
